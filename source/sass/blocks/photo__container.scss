@@ -1,0 +1,27 @@
+.photo__container {
+  padding: 25px 20px;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #ffffff;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+
+}
+
+.photo__desc {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.photo__author {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.photo__likes {
+  font-weight: 700;
+}

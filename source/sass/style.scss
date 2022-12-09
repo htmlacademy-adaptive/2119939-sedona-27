@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+
+@import "./blocks/fonts.scss";
+@import "./blocks/page__body.scss";
+@import "./blocks/page__container.scss";
+
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/navigation__item.scss";
+
+@import "./blocks/hero.scss";
+@import "./blocks/hero-block.scss";
+@import "./blocks/button.scss";
+
+
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages__image.scss";
+@import "./blocks/advantages__list.scss";
+@import "./blocks/advantages__item.scss";
+
+@import "./blocks/advantages__item--secondary.scss";
+@import "./blocks/section.scss";
+@import "./blocks/section__title.scss";
+@import "./blocks/section__text.scss";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/photo__container.scss";
+@import "./blocks/video.scss";
+
+@import "./blocks/review-form.scss";
+
+@import "./blocks/main-footer.scss";
+@import "./blocks/hashtag.scss";
+

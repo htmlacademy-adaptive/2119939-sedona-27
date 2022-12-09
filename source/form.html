@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <a class="main-header__logo">
       <img src="img/logo-image.png" width="185" height="96" alt="Логотип города Седона">
@@ -18,22 +20,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__item-link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>
+            <aclass="site-list__item-link">
               Форма Отзыва
             </a>
           </li>
           <li class="site-list__item">
-            <a href="htmlacademy.ru">
+            <a class="site-list__item-link" href="htmlacademy.ru">
               HTML ACADEMY
             </a>
           </li>
@@ -49,7 +51,7 @@
         width="320" height="214">
 
       <h2 class="hero-block__title">Оставьте свой отзыв</h2>
-      <p class="hero-block__text">
+      <p class="hero-block__text section__text">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях </p>
 
     </section>
@@ -127,28 +129,28 @@
           <legend class="review-form__title">посещенные достопримечательности:</legend>
           <ul class="review-form__list attractions__list">
             <li class="review-form__item attractions__item">
-              <label class="control">
+              <label class="control review-form__item-control">
                 <input class="control-input visually-hidden" type="checkbox" name="DevilsBridge" checked>
                 <span class="control-mark"></span>
                 Мост Дьявола
               </label>
             </li>
             <li class="review-form__item attractions__item">
-              <label class="control">
+              <label class="control review-form__item-control">
                 <input class="control-input visually-hidden" type="checkbox" name="MountainBell" checked>
                 <span class="control-mark"></span>
                 Гора-Колокол
               </label>
             </li>
             <li class="review-form__item attractions__item">
-              <label class="control">
+              <label class="control review-form__item-control">
                 <input class="control-input visually-hidden" type="checkbox" name="SlidePark" checked>
                 <span class="control-mark"></span>
                 Слайд-парк
               </label>
             </li>
             <li class="review-form__item attractions__item">
-              <label class="control">
+              <label class="control review-form__item-control">
                 <input class="control-input visually-hidden" type="checkbox" name="RedMountains">
                 <span class="control-mark"></span>
                 Красные скалы
@@ -159,7 +161,7 @@
 
         <fieldset class="review-form__container review-form__emotions">
           <legend class="review-form__title">Опишите свои эмоции:</legend>
-          <textarea class="control-input" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="control-input review-form__input-field" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
 <div class="form__footer">
@@ -179,35 +181,42 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте.</span></a>
+
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в
+                Ютубе.</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
 
   <div class="modal-container error">
-    <h2 class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-    <p class="modal-container__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <h2 class="modal-container__title section__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+    <p class="modal-container__text section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="button modal-container__close-button">OK</button>
   </div>
 
   <div class="modal-container success">
-    <h2 class="modal-container__title">Ваш отзыв отправлен!</h2>
-    <p class="modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+    <h2 class="modal-container__title section__title">Ваш отзыв отправлен!</h2>
+    <p class="modal-container__text section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
       опубликуем его на сайте.</p>
     <button class="button modal-container__close-button">ЗАкРЫТЬ ОКНО</button>
+  </div>
   </div>
 </body>
 

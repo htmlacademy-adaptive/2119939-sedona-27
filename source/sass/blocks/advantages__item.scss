@@ -1,0 +1,30 @@
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.advantages__item--color {
+  background-color: #81B3D2;;
+}
+
+.advantages__item--color p {
+  color: #ffffff;
+}
+
+.advantages__item--color h3 {
+  color: #ffffff;
+  padding-bottom: 11px;
+}
+
+
+.advantages__item--light {
+  background-color: #eeeeee;
+
+}
+
+.advantages__item--light:not(:last-child) {
+  border-bottom: 1px solid #D6d6d6;
+}
+

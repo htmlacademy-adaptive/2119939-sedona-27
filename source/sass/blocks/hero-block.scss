@@ -1,4 +1,19 @@
 .hero-block {
   background-image: url('/source/img/hero-catalog.jpg');
   background-color: #000;
+
+}
+
+.hero {
+  background-image: url('/source/img/hero__mask.svg'), url('/source/img/hero-main__background.jpg');
+  background-position: center bottom, center;
+  background-size: 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #756157;
+  color: $white;
+}
+
+.hero__logo {
+  margin: 0 auto;
+
 }

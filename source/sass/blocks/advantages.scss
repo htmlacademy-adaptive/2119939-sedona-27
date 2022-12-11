@@ -1,109 +1,140 @@
 .advantages {
   background-color: $white;
-}
 
-.advantages__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  &-container {
+    width: 284px;
+    text-align: center;
+    padding: 32px 18px 35px 18px;
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 256px 256px 256px;
+    @media (min-width: $tablet-width) {
+      width: 520px;
+      margin: 0 auto;
+      padding-bottom: 55px;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   padding-bottom 44px;
+    // }
+
   }
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 256px 256px 256px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 400px 400px 400px;
+    }
   }
 
-}
 
-.advantages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.advantages__item--color {
-  background-color: #81B3D2;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
-}
-
-.advantages__item--color .advantages__text {
-  color: $white;
-}
-
-.advantages__item--color .advantages__title {
-  color: $white;
-  padding-bottom: 11px;
-}
-
-
-.advantages__item--light {
-  background-color: #eeeeee;
-
-  @media (min-width: $tablet-width) {
-    min-height: 256px;
   }
 
-}
+  &__item--color {
+    background-color: #81B3D2;
+  }
+
+  &__item--color .advantages__text {
+    color: $white;
+  }
+
+  &__item--color .advantages__title {
+    color: $white;
+    padding-bottom: 11px;
+  }
 
 
+  &__item--light {
+    background-color: #eeeeee;
+
+    @media (min-width: $tablet-width) {
+      min-height: 256px;
+    }
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 11px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      padding-left: 33px;
+      padding-right: 33px;
+    }
 
 
+  }
 
-.advantages__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 32px 18px 35px 18px;
-  margin: 0;
-}
+  &__title--big {
+    padding-bottom: 35px;
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
 
-.advantages__text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0 18px 16px 18px;
-  margin: 0;
-}
+  }
 
-.advantages__title--secondary {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  padding-left: 65px;
-  text-align: left;
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 18px 16px 18px;
+    margin: 0;
+  }
 
-}
+  &__title--secondary {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-left: 65px;
+    text-align: left;
 
-.advantages__item--secondary {
-  background-color: $white;
-  max-width: 320px;
-}
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
+  }
 
-.advantages__text--secondary {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #333333;
-  padding-left: 65px;
-  padding-right: 18px;
-}
+  &__item--secondary {
+    background-color: $white;
+    max-width: 320px;
+  }
 
-.advantages__image {
-  height: 100%;
+  &__text--secondary {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #333333;
+    padding-left: 65px;
+    padding-right: 18px;
+  }
+
+  &__image {
+    height: 100%;
     max-width: 100%;
     object-fit: cover;
-
+  }
 }

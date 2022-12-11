@@ -6,9 +6,9 @@
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
 
-}
 
-.photo__desc {
+
+&__desc {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -17,12 +17,13 @@
   padding-top: 15px;
 }
 
-.photo__author {
+&__author {
   margin: 0;
   padding-bottom: 16px;
 }
 
-.photo__likes {
+&__likes {
   font-weight: 700;
 
+}
 }

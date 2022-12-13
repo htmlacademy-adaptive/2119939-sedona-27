@@ -92,4 +92,30 @@
     line-height: 26px;
 
   }
+
+
+  &__emotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 48px;
+  }
+
+&__emotions-field {
+
+  
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
+
+
 }
+
+}
+
+

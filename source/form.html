@@ -11,42 +11,47 @@
 <body class="page__body">
   <div class="page__container">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/logo-image.png" width="185" height="96" alt="Логотип города Седона">
-      </a>
+
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+
       <nav class="main-nav">
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">
-                Форма Отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="htmlacademy.ru">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="main-nav__wrapper"> -->
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__item-link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="htmlacademy.ru">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
       </nav>
+      <a class="main-header__logo">
+        <img class="main-header__logo-img" src="img/logo-image.png" width="185" height="96" alt="Логотип города Седона">
+      </a>
     </header>
 
-    <main class="main-container">
+    <main class="main-container--form">
       <h1 class="visually-hidden">Форма отзыва о Седоне</h1>
       <section class="main-form section">
         <img class="hero-block__image" alt="Надпись Седона на фоне горного массива." src="img/hero__logo-short.svg"
@@ -168,17 +173,17 @@
           </div>
 
           <div class="review-form__emotions">
-            <fieldset class="review-form__container review-form__emotions">
+            <fieldset class="review-form__container ">
               <legend class="review-form__title">Опишите свои эмоции:</legend>
-              <textarea class="control-input review-form__input-field" rows="4"
+              <textarea class="control-input review-form__input-field review-form__emotions-field" rows="4"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
+            <div class=form__footer-button><button class="button" type="button">ОТПРАВИТЬ ОТЗЫВ</button></div>
+            
+            <span class="obligatory">* — обязательные поля</span>
           </div>
 
-          <div class="form__footer">
-            <button class="button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
-            <span class="oblligatory">* — обязательные поля</span>
-          </div>
+          
         </form>
       </section>
 

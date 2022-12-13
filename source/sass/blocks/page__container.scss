@@ -4,6 +4,26 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  box-shadow: 0 0 15px #00000033;
+  max-width: 1200px;
+
 
 
 }
+
+// .main-container--form {
+
+//   // @media (min-width: $tablet-width) {
+//   //   padding-left: 60px;
+//   //   padding-right: 60px;
+
+//   // }
+
+//   // @media (min-width: $desktop-width) {
+//   //   padding-left: 120px;
+//   //   padding-right: 120px;
+
+//   // }
+
+// }

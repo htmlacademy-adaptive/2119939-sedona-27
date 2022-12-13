@@ -10,11 +10,20 @@
   color: $white;
 
 
-&__logo {
-  margin-top: 70px;
+  &__logo {
+    margin-top: 70px;
 
 
-
-
+  }
 }
+
+.hero-block__container {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 155px;
+    width: 458px;
+  }
+
 }

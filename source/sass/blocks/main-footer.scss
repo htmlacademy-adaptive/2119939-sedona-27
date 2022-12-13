@@ -1,9 +1,26 @@
 .main-footer {
   background-color: $white ;
-  padding: 29px;
+
   margin-top: auto;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      margin: 76px 60px 36px;
+      justify-content: space-between;
+
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 120px;
+      width: 980px;
+    }
+  }
+
+
 }
-
-
-
-

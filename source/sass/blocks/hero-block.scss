@@ -1,4 +1,30 @@
-.hero-block {
-  background-image: url('/source/img/hero-catalog.jpg');
-  background-color: #000;
+.hero {
+  height: 518px;
+
+  background-image: url(/img/hero-main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #756157;
+
+  color: $white;
+
+
+  &__logo {
+    margin-top: 70px;
+
+
+  }
+}
+
+.hero-block__container {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    // padding: 155px;
+    width: 458px;
+    // padding-bottom: 0;
+  }
+
 }

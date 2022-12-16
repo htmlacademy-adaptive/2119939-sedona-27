@@ -1,26 +1,21 @@
 .photo {
-
- 
-
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 60px;
-
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1200px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
-
-
 
 .photo__container {
   padding: 25px 20px;
@@ -33,7 +28,6 @@
   @media (min-width: $tablet-width) {
     background-color: #EAEAEA;
     padding: 0;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -42,19 +36,14 @@
 
 }
 
-
-
 .photo__container--first {
   @media (min-width: $tablet-width) {
-
     grid-column: 1 /3;
 
   }
 
   @media (min-width: $desktop-width) {
-
     grid-column: 1 /4;
-
   }
 }
 
@@ -67,23 +56,32 @@
 }
 
 .photo__figcaption {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
+    flex-direction: row;
     padding-left: 20px;
-
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 20px;
-    left: 40px;
+    bottom: 5px;
+    left: 0;
     z-index: 1;
     color: $white;
-    background-color:#0000004d;
-    padding-left: 21px;
+    background-color: #0000004d;
+    width: 100%;
+  }
+}
+
+.photo__figcaption-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -99,6 +97,7 @@ flex-direction: column;
 .photo__author {
   margin: 0;
   padding-bottom: 16px;
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: 0;
@@ -107,4 +106,9 @@ flex-direction: column;
 
 .photo__likes {
   font-weight: 700;
+}
+
+.photo__img {
+  max-width: 100%;
+  object-fit: cover;
 }

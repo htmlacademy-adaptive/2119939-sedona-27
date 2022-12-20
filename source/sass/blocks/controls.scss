@@ -1,0 +1,60 @@
+.review-form__item-control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .review-form__item-control[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
+  }
+  
+  .control-mark {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 46px;
+    height: 46px;
+    background-color:#F2F2F2;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .control-mark-checkbox {
+    border-radius: 4px;
+
+  }
+
+  .control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: #333333;
+    border-radius: 50%;
+    content: "";
+  }
+
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    background-image: url(/img/tick.svg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    top: 12px;
+    left: 15px;
+    width: 22px;
+    height: 16px;
+    content: "";
+    
+  }
+  

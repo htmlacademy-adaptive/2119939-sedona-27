@@ -1,5 +1,15 @@
-
+.copyright {
+  display: flex;
+  flex-direction: row;
+  vertical-align: baseline;
+}
 .copyright__text {
     text-transform: uppercase;
+    display: block;
+    
 
+  }
+
+  .copyright__logo {
+    margin-left: 12px;
   }

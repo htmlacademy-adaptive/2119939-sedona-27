@@ -1,26 +1,45 @@
 .main-footer {
   background-color: $white ;
+}
 
-  margin-top: auto;
+.main-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  margin: 0 auto;
 
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 180px;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    padding: 36px 45px 36px 45px;
+    margin: 0;
+    justify-content: space-between;
 
-    @media (min-width: $tablet-width) {
-      width: 648px;
-      margin: 76px 60px 36px;
-      justify-content: space-between;
-
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-top: 120px;
-      width: 980px;
-    }
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    width: 980px;
+  }
+}
 
+.social__list {
+  display: flex;
+  flex: row;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__logo {
+
+  &:hover {
+    fill:
+      #669EC0;
+  }
+
+  &:active {
+    fill:
+      #5496BD;
+  }
 }

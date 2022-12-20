@@ -26,6 +26,15 @@
     background-color:#F2F2F2;
     border: none;
     border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #E5E5E5;
+    }
+
+    &:disabled {
+      background-color: #D5D5D5;
+    }
   }
 
   .control-mark-checkbox {

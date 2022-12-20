@@ -6,9 +6,6 @@
   }
 }
 
-
-
-
 .review-form {
   background-color: #ffffff;
   display: flex;
@@ -49,18 +46,16 @@
 }
 
 
-  .name__item {
+.name__item {
 
-    @media (min-width: $tablet-width) {
-      width: 280px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 63px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 280px;
   }
 
-
+  @media (min-width: $desktop-width) {
+    padding-right: 63px;
+  }
+}
 
 
 .name__item .review-form__input-field {
@@ -115,6 +110,25 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #E5E5E5;
+    border: none;
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:focus-visible {
+    border: none;
+  }
+
+  &:active {
+    background-color: #FFFFFF;
+    border: 4px solid #E5E5E5;
+  }
 }
 
 .review-form__input-label {
@@ -129,7 +143,8 @@
 }
 
 .contacts__item {
-  position: relative;}
+  position: relative;
+}
 
 
 .contacts__item--img-wrapper {
@@ -251,10 +266,7 @@
 
     flex: 0 0 184px;
   }
-
 }
-
-
 
 .form__footer {
 

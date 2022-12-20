@@ -140,19 +140,36 @@
   }
 }
 
-
 .site-list__item {
   background-color: #81B3D2;
   text-transform: uppercase;
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
-  // width: 320px;
-  // box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  border-bottom:1px solid #01010133;
+  border-top: 1px solid #FFFFFF33;
+  
+
+  &:hover {
+    cursor: pointer;
+    background-color: #669EC0;
+  }
+
+  &:active {
+    color: #FFFFFF33;
+  }
+
 
   @media (min-width: $tablet-width) {
     background-color: $white;
     width: 153px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: #766357;
+    }
   }
 
   @media (min-width: $desktop-width) {

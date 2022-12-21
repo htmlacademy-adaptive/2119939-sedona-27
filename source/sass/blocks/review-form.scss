@@ -6,9 +6,6 @@
   }
 }
 
-
-
-
 .review-form {
   background-color: #ffffff;
   display: flex;
@@ -31,6 +28,7 @@
 
 .review-form__container {
   border: none;
+  position: relative;
 }
 
 .review-form__name {
@@ -49,18 +47,16 @@
 }
 
 
-  .name__item {
+.name__item {
 
-    @media (min-width: $tablet-width) {
-      width: 280px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 63px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 280px;
   }
 
-
+  @media (min-width: $desktop-width) {
+    padding-right: 63px;
+  }
+}
 
 
 .name__item .review-form__input-field {
@@ -88,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    width: 308px;
   }
 }
 
@@ -115,6 +112,25 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #E5E5E5;
+    border: none;
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:focus-visible {
+    border: none;
+  }
+
+  &:active {
+    background-color: #FFFFFF;
+    border: 4px solid #E5E5E5;
+  }
 }
 
 .review-form__input-label {
@@ -129,7 +145,8 @@
 }
 
 .contacts__item {
-  position: relative;}
+  position: relative;
+}
 
 
 .contacts__item--img-wrapper {
@@ -179,7 +196,53 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 768px;
+    width: 960px;
+  }
+
+}
+
+.review-form__title--border {
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 280px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
   }
 
 }
@@ -251,10 +314,7 @@
 
     flex: 0 0 184px;
   }
-
 }
-
-
 
 .form__footer {
 

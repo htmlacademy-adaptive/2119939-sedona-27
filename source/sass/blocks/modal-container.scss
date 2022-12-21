@@ -9,19 +9,21 @@
     @media (min-width: $tablet-width) {
         width: 400px;
     }
+}
 
-    &__title {
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        text-transform: uppercase;
 
-        @media (min-width: $tablet-width) {
-            font-size: 30px;
-            line-height: 40px;
-        }
+.modal-container__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
     }
 }
+
 
 .error__wrapper {
     width: 237px;
@@ -39,27 +41,26 @@
     @media (min-width: $tablet-width) {
         width: 640px;
     }
+}
 
 
-    &__wrapper {
-        background-color: $white;
-        width: 244px;
-        margin: 0 auto;
-        padding: 0 38px;
+.success__wrapper {
+    background-color: $white;
+    width: 244px;
+    margin: 0 auto;
+    padding: 0 38px;
 
 
-        @media (min-width: $tablet-width) {
-            width: 444px;
-            padding: 53px 99px 30px 97px;
-        }
+    @media (min-width: $tablet-width) {
+        width: 444px;
+        padding: 53px 99px 30px 97px;
     }
+}
 
-    &__button {
-        margin: 20px;
+.success__button {
+    margin: 20px;
 
-        @media (min-width: $tablet-width) {
-            width: 458px;
-        }
+    @media (min-width: $tablet-width) {
+        width: 458px;
     }
-
 }

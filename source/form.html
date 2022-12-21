@@ -6,23 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__container">
 
-
-
-
     <header class="main-header">
       <div class="main-header__inner">
         <div class="main-header__logo logo">
           <a class="logo__link">
-            <img class="logo__link-img" src="img/logo-image.png" alt="Логотип Sedona" width="185" height="96">
+            <img class="logo__link-img" src="img/logo-image.svg" alt="Логотип Sedona" width="185" height="96">
           </a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -37,8 +38,8 @@
                 ФОТО И ВИДЕО
               </a>
             </li>
-            <li class="site-list__item">
-
+            <li class="site-list__item site-list__item--empty">
+              &nbsp;
             </li>
             <li class="site-list__item site-list__item--current">
               <a class="site-list__link" href="form.html">
@@ -78,18 +79,18 @@
               <ul class="review-form__list name__list">
                 <li class="review-form__item name__item">
                   <label class="review-form__input-label" for="input-name">ИМЯ*:</label>
-                  <input class="review-form__input-field" type="text" id="input-name" placeholder="Введите имя"
-                    value="Пётр" required>
+                  <input class="review-form__input-field" type="text" id="input-name" placeholder="Имя" value="Пётр"
+                    required>
                 </li>
                 <li class="review-form__item name__item">
                   <label class="review-form__input-label" for="input-surname">ФАМИЛИЯ*:</label>
-                  <input class="review-form__input-field" type="text" id="input-surname" placeholder="Введите фамилию"
+                  <input class="review-form__input-field" type="text" id="input-surname" placeholder="Фамилия"
                     value="Пустота" required>
                 </li>
                 <li class="review-form__item name__item">
                   <label class="review-form__input-label" for="input-name">Отчество:</label>
-                  <input class="review-form__input-field" type="text" id="input-fathername"
-                    placeholder="Введите отчество" value="Викторович">
+                  <input class="review-form__input-field" type="text" id="input-fathername" placeholder="Отчество"
+                    value="Викторович">
                 </li>
 
               </ul>
@@ -130,7 +131,7 @@
 
           <div class="review-form__impression">
             <fieldset class="review-form__container ">
-              <legend class="review-form__title">ВАше Общее впечатление:</legend>
+              <legend class="review-form__title review-form__title--border">ВАше Общее впечатление:</legend>
               <ul class="review-form__list impression__list">
                 <li class="review-form__item impression__item">
                   <label class="review-form__item-control">
@@ -160,7 +161,7 @@
 
           <div class="review-form__attractions">
             <fieldset class="review-form__container ">
-              <legend class="review-form__title">посещенные достопримечательности:</legend>
+              <legend class="review-form__title review-form__title--border">посещенные достопримечательности:</legend>
               <ul class="review-form__list attractions__list">
                 <li class="review-form__item attractions__item">
                   <label class="control review-form__item-control">
@@ -196,7 +197,7 @@
 
           <div class="review-form__emotions">
             <fieldset class="review-form__container ">
-              <legend class="review-form__title review-form__title--name">Опишите свои эмоции:</legend>
+              <legend class="review-form__title review-form__title--name review-form__title--border">Опишите свои эмоции:</legend>
               <textarea class="control-input review-form__input-field review-form__emotions-field" rows="4"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
@@ -274,7 +275,12 @@
         <div class="main-footer__copyright copyright">
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z" fill="#000"/></svg>
+            <svg class="copyright__logo" width="28" height="33" viewBox="0 0 28 33" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"
+                fill="#000" />
+            </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
 
@@ -305,6 +311,7 @@
       <button class="button modal-container__close-button success__button">ЗАкРЫТЬ ОКНО</button>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -71,10 +71,11 @@
     position: absolute;
     bottom: 5px;
     left: 0;
+    right: 0;
     z-index: 1;
     color: $white;
     background-color: #0000004d;
-    width: 100%;
+    width: inherit;
   }
 }
 

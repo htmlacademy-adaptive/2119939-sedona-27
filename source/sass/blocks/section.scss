@@ -1,13 +1,14 @@
 .section {
   display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- background-color: $white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
 
 
 
-&__title {
+.section__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -21,7 +22,7 @@
 }
 
 
-&__text {
+.section__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -29,6 +30,4 @@
   text-align: center;
   padding-bottom: 45px;
   margin: 0;
-}
-
 }

@@ -28,6 +28,7 @@
 
 .review-form__container {
   border: none;
+  position: relative;
 }
 
 .review-form__name {
@@ -83,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    width: 308px;
   }
 }
 
@@ -194,7 +196,53 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 768px;
+    width: 960px;
+  }
+
+}
+
+.review-form__title--border {
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 280px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: #DBDBDB;
+      content: "";
+    }
   }
 
 }

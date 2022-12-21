@@ -99,7 +99,7 @@
   right: 20px;
   width: 23px;
   height: 4px;
-  background-color:#81B3D2;
+  background-color: #81B3D2;
   box-shadow: 0 8px 0 0 #81B3D2, 0 16px 0 0 #81B3D2;
 }
 
@@ -124,7 +124,7 @@
     content: "";
     position: absolute;
     top: 24px;
-   right: 20px;
+    right: 20px;
     width: 36px;
     height: 4px;
     background-color: #ffffff;
@@ -146,9 +146,8 @@
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
-  border-bottom:1px solid #01010133;
+  border-bottom: 1px solid #01010133;
   border-top: 1px solid #FFFFFF33;
-  
 
   &:hover {
     cursor: pointer;

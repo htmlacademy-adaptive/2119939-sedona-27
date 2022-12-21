@@ -10,7 +10,6 @@
 
 
   @media (min-width: $tablet-width) {
-    
     background-image: url(/img/hero-triangle.svg), url(/img/back-tablet.jpg);
     background-position: center bottom, center;
     background-size: cover;
@@ -39,12 +38,35 @@
 .hero-inner {
   height: 320px;
   text-align: center;
-  background-image: url(/img/hero-triangle.svg), url(/img/hero-main.jpg);
+  background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-mobile.jpg);
   background-position: center bottom, center bottom;
   background-size: 100% cover;
   background-repeat: no-repeat, no-repeat;
   background-color: #756157;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-mobile@2x.jpg);
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-tablet.jpg);
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-tablet@2x.jpg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-desktop.jpg);
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(/img/hero-triangle.svg), url(/img/hero-inner-desktop@2x.jpg);
+    }
+  }
+
 }
 
 .hero-inner__container {

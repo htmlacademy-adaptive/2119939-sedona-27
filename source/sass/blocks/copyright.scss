@@ -1,12 +1,36 @@
 .copyright {
   display: flex;
   flex-direction: row;
-  vertical-align: baseline;
+  vertical-align: middle;
+  padding-top: 40px;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
+
+  &:hover .copyright__logo {
+    cursor: pointer;
+    fill: #81B3D2;
+  }
+
+  &:active .copyright__logo {
+        fill: #B3B3B3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0
+  }
+
 }
 
 .copyright__text {
   text-transform: uppercase;
   display: block;
+
 }
 
 .copyright__logo {

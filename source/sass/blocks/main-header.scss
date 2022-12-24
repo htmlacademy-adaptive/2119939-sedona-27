@@ -196,6 +196,13 @@
   }
 }
 
+.site-list__item--current {
+  color:#766357;
+}
+
+.site-list__link--current {
+  color:#766357;
+}
 
 .site-list__link {
   text-decoration: none;
@@ -209,6 +216,14 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+
+    &:hover {
+      color:#81B3D2;
+    }
+
+    &:active {
+      color:#0000004d;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -127,16 +127,23 @@
   line-height: 26px;
   text-transform: uppercase;
   padding-left: 65px;
+  padding-top: 30px;
+  margin: 0;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding-top: 158px;
+    text-align: center;
+    
   }
 }
 
 .advantages__item--secondary {
   background-color: $white;
   max-width: 320px;
+  position: relative;
+
 }
 
 .advantages__text--secondary {
@@ -148,20 +155,40 @@
   color: #333333;
   padding-left: 65px;
   padding-right: 18px;
+ padding-top: 16px;
+  padding-bottom: 33px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
+    text-align: center;
   }
 
 }
 
-.advantages__item--souvenir p {
-  padding-bottom: 46px;
-}
+
 
 .advantages__image {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
+}
+
+.advantages__icon {
+  position:absolute;
+top: 24px;
+left: 18px;
+
+@media (min-width: $tablet-width) {
+  left: 50%;
+  top: 60px;
+  width: 77px;
+  height: auto;
+}
+}
+
+.advantages__icon--gift {
+  @media (min-width: $tablet-width) {
+    width: 67px;
+  }
 }

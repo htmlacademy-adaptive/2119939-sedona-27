@@ -6,16 +6,16 @@
   line-height: 23px;
 }
 
-.review-form__item-control[type="radio"]:checked+.control-mark::before {
-  position: absolute;
-  top: 105px;
-  left: 105px;
-  width: 10px;
-  height: 10px;
-  background-color: #3F5E72;
-  border-radius: 50%;
-  content: "";
-}
+// .review-form__item-control:checked+.control-mark::before {
+//   position: absolute;
+//   top: 105px;
+//   left: 105px;
+//   width: 10px;
+//   height: 10px;
+//   background-color: #3F5E72;
+//   border-radius: 50%;
+//   content: "";
+// }
 
 .control-mark {
   position: absolute;
@@ -37,9 +37,8 @@
   }
 }
 
-.control-mark-checkbox {
+.control-mark--checkbox {
   border-radius: 4px;
-
 }
 
 .control-input[type="radio"]:checked+.control-mark::before {

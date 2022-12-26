@@ -1,8 +1,8 @@
 .social__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 .social__item {
   width: 48px;
@@ -16,4 +16,12 @@
   &:active {
     background-color: #5496BD;
   }
+}
+
+.social__logo:hover {
+  fill: #tomato;
+}
+
+.social__logo:active {
+  fill: #tomato;
 }

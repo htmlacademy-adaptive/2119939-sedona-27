@@ -55,6 +55,14 @@
   }
 }
 
+.photo__img {
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 .photo__figcaption {
   display: flex;
   flex-direction: column;
@@ -120,5 +128,4 @@
   @media (min-width: $desktop-width) {
     fill: #ffffff;
   }
-  
 }

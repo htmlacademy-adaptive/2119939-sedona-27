@@ -104,6 +104,8 @@
 
 .advantages__title--big {
   padding-bottom: 35px;
+margin: 0 auto;
+  width: 284px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -135,7 +137,6 @@
     font-size: 21px;
     padding-top: 158px;
     text-align: center;
-    
   }
 }
 
@@ -155,7 +156,7 @@
   color: #333333;
   padding-left: 65px;
   padding-right: 18px;
- padding-top: 16px;
+  padding-top: 16px;
   padding-bottom: 33px;
   margin: 0;
 
@@ -172,19 +173,21 @@
   height: 100%;
   max-width: 100%;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages__icon {
-  position:absolute;
-top: 24px;
-left: 18px;
+  position: absolute;
+  top: 24px;
+  left: 18px;
 
-@media (min-width: $tablet-width) {
-  left: 50%;
-  top: 60px;
-  width: 77px;
-  height: auto;
-}
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    top: 60px;
+    width: 77px;
+    height: auto;
+  }
 }
 
 .advantages__icon--gift {

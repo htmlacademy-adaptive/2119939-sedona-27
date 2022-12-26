@@ -117,19 +117,23 @@
   &:hover {
     background-color: #E5E5E5;
     border: none;
+    box-sizing: border-box;
   }
 
   &:focus {
     border: none;
+    box-sizing: border-box;
   }
 
   &:focus-visible {
     border: none;
+    box-sizing: border-box;
   }
 
   &:active {
     background-color: #FFFFFF;
     border: 4px solid #E5E5E5;
+    box-sizing: border-box;
   }
 }
 
@@ -213,6 +217,7 @@
       background-color: #DBDBDB;
       content: "";
     }
+
     &::after {
       position: absolute;
       top: 35px;
@@ -234,6 +239,7 @@
       background-color: #DBDBDB;
       content: "";
     }
+
     &::after {
       position: absolute;
       top: 35px;
@@ -244,7 +250,6 @@
       content: "";
     }
   }
-
 }
 
 .impression__list {
@@ -257,6 +262,7 @@
     margin-right: auto;
     flex-wrap: wrap;
     padding-top: 28px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -278,10 +284,10 @@
   @media (min-width: $desktop-width) {
     flex: 0 0 33%;
   }
-
 }
 
 .attractions__list {
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -317,6 +323,8 @@
 }
 
 .form__footer {
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -342,4 +350,6 @@
 
 .obligatory {
   display: block;
+  text-transform: uppercase;
+  
 }

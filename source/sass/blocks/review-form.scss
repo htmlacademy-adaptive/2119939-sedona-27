@@ -111,29 +111,17 @@
   padding: 16px 20px;
   font-size: 18px;
   line-height: 26px;
+  outline: 4px solid transparent;
   border: none;
-  box-sizing: border-box;
 
   &:hover {
     background-color: #E5E5E5;
-    border: none;
-    box-sizing: border-box;
-  }
-
-  &:focus {
-    border: none;
-    box-sizing: border-box;
-  }
-
-  &:focus-visible {
-    border: none;
-    box-sizing: border-box;
+    
   }
 
   &:active {
     background-color: #FFFFFF;
-    border: 4px solid #E5E5E5;
-    box-sizing: border-box;
+    outline: 4px solid #E5E5E5;
   }
 }
 
@@ -351,5 +339,4 @@
 .obligatory {
   display: block;
   text-transform: uppercase;
-  
 }

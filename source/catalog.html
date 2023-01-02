@@ -62,13 +62,13 @@
       <section class="hero-inner">
 
         <img class="hero-inner__image" alt="Надпись Седона на фоне горного массива." src="img/hero__logo-short.svg"
-          width="320" height="214">
+          width="229" height="39">
       </section>
       <section>
         <div class="hero-inner__container section">
           <h2 class="hero-inner__title section__title">Фото и видео</h2>
-          <p class="hero-inner__text section__text">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          <p class="hero-inner__text">
+            Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
       </section>
@@ -211,11 +211,13 @@
         </div>
         <picture>
           <source media="(min-width: 1200px)"
-            srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x" width="800" height="500">
-          <source media="(min-width:768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x"
-            width="648" height="500">
+            srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
           <img class="video__preview" src="img/catalog/video-mobile.jpg" width="280" height="177"
             srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Превью-заглушка">
+            <svg class="icon-play-video" width="48" height="54">
+              <use xlink:href="img/sprite.svg#icon-play-video" aria-label="Воспроизвести видео"></use>
+            </svg>
         </picture>
 
       </section>
@@ -224,15 +226,15 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
-          <p>#visitSEDONA</p>
+        <div class="main-footer__hashtag">
+          <p class="hashtag">#visitSEDONA</p>
         </div>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__logo social__logo--vk" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#social-vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте.</span></a>
 
@@ -240,7 +242,7 @@
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <svg class="social__logo social__logo--tg" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#social-tg"></use>
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
 
                 <span class="visually-hidden">Мы в Телеграме.</span>
@@ -249,7 +251,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social__logo social__logo--youtube" width="48" height="48">
-                  <use xlink:href="img/sprite.svg#social-youtube"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
 
                 <span class="visually-hidden">Мы в
@@ -262,7 +264,7 @@
           <p class="copyright__text">Разработано:</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo" width="27" height="35">
-              <use xlink:href="img/sprite.svg#copyright__logo"></use>
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
             </svg>
             <span class=" visually-hidden">HTML Academy</span>
           </a>

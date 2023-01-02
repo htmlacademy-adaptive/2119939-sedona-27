@@ -131,9 +131,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 20px;
-    width: 36px;
+    top: 26px;
+    right: 45px;
+    width: 30px;
     height: 4px;
     background-color: #ffffff;
   }
@@ -197,11 +197,11 @@
 }
 
 .site-list__item--current {
-  color:#766357;
+  color: #766357;
 }
 
 .site-list__link--current {
-  color:#766357;
+  color: #766357;
 }
 
 .site-list__link {
@@ -216,13 +216,15 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    font-size: 14px;
+    line-height: 21px;
 
     &:hover {
-      color:#81B3D2;
+      color: #81B3D2;
     }
 
     &:active {
-      color:#0000004d;
+      color: #0000004d;
     }
   }
 

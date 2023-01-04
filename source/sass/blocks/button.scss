@@ -27,3 +27,12 @@
   }
 
 }
+
+
+.button--success {
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+      width: 458px;
+  }
+}

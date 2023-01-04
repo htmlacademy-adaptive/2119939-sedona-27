@@ -1,5 +1,5 @@
 .hero {
-  height: 518px;
+  height: 389px;
   text-align: center;
   background-image: url(/img/hero-triangle.svg), url(/img/back-mobile.jpg);
   background-position: center bottom, center;
@@ -38,7 +38,7 @@
 }
 
 
-.hero-inner {
+.hero__inner {
   height: 158px;
   text-align: center;
   background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-mobile.jpg);
@@ -56,7 +56,6 @@
     height: 290px;
     background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-tablet.jpg);
 
-
     @media (min-resolution: 2dppx) {
       background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-tablet@2x.jpg);
     }
@@ -66,20 +65,17 @@
     height: 301px;
     background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-desktop.jpg);
 
-
     @media (min-resolution: 2dppx) {
       background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-desktop@2x.jpg);
     }
   }
-
 }
 
-.hero-inner__container {
+.hero__inner-container {
   padding: 37px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -88,13 +84,13 @@
   }
 }
 
-.hero-inner__text br {
+.hero__inner-text br {
   @media (max-width: 320px) {
     display: none;
   }
 }
 
-.hero-inner__title {
+.hero__inner-title {
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -106,7 +102,7 @@
   }
 }
 
-.hero-inner__text {
+.hero__inner-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -121,7 +117,7 @@
   }
 }
 
-.hero-inner__image {
+.hero__inner-image {
   width: 230px;
   padding-top: 52px;
 

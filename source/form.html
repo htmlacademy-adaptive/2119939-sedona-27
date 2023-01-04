@@ -57,14 +57,15 @@
     </header>
 
 
-    <main class="main-container--form">
+    <main class="main-form">
       <h1 class="visually-hidden">Форма отзыва о Седоне</h1>
-      <section class="hero-inner">
-        <img class="hero-inner__image" alt="Надпись Седона на фоне горного массива." src="img/hero__logo-short.svg">
+      <section class="hero__inner">
+        <h2 class="visually-hidden">Надпись Седона на фоне горного массива.</h2>
+        <img class="hero__inner-image" alt="Надпись Седона на фоне горного массива." src="img/hero__logo-short.svg">
       </section>
-      <section class="section">
-        <h2 class="main-form__title section__title">Оставьте свой отзыв</h2>
-        <p class="main-form__text section__text">
+      <section class="main-form__section">
+        <h2 class="main-form__title">Оставьте свой отзыв</h2>
+        <p class="main-form__text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях </p>
 
       </section>
@@ -99,7 +100,7 @@
               <legend class="review-form__title review-form__title--name">Контактная информация:</legend>
               <ul class="review-form__list contacts__list">
                 <li class="review-form__item contacts__item">
-                  <label class="review-form__input-label" for="input-phone">Контактный телефон*:</label>
+                  <label class="review-form__input-label contacts__item-label" for="input-phone">Контактный телефон*:</label>
                   <input class="review-form__input-field" type="text" id="input-phone" placeholder="Введите телефон"
                     required>
                   <div class="contacts__item--img-wrapper">
@@ -110,7 +111,7 @@
                   </div>
                 </li>
                 <li class="review-form__item contacts__item">
-                  <label class="review-form__input-label" for="input-email">Электронная почта*:</label>
+                  <label class="review-form__input-label contacts__item-label" for="input-email">Электронная почта*:</label>
                   <input class="review-form__input-field" type="text" id="input-email" placeholder="Введите e-mail"
                     required>
                   <div class="contacts__item--img-wrapper">
@@ -199,11 +200,11 @@
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
-            <div class="form__footer">
-              <button class="button form__footer-button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+            <div class="review-form__footer">
+              <button class="button review-form__footer-button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
 
 
-              <span class="obligatory">* — обязательные поля</span>
+              <span class="review-form__obligatory">* — обязательные поля</span>
             </div>
           </div>
 
@@ -264,7 +265,7 @@
 
 
     <div class="modal-container error">
-      <div class="error__wrapper">
+      <div class="modal-container--error">
         <h2 class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
         <p class="modal-container__text section__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
           заполнить</p>
@@ -274,15 +275,15 @@
 
     </div>
 
-    <div class="modal-container success">
-      <div class="success__wrapper">
+    <div class="modal-container">
+      <div class="modal-container--success">
         <h2 class="modal-container__title">Ваш отзыв отправлен!</h2>
         <p class="modal-container__text section__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В
           ближайшее
           время мы
           опубликуем его на сайте.</p>
       </div>
-      <button class="button modal-container__close-button success__button">ЗАкРЫТЬ ОКНО</button>
+      <button class="button modal-container__close-button button--success">ЗАкРЫТЬ ОКНО</button>
     </div>
   </div>
   <script src="js/script.js"></script>

@@ -3,7 +3,6 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
   }
-
 }
 
 .main-footer__wrapper {
@@ -22,27 +21,5 @@
   @media (min-width: $desktop-width) {
     padding-top: 36px;
     width: 980px;
-  }
-}
-
-.social__list {
-  display: flex;
-  flex: row;
-}
-
-.social__item {
-  margin-right: 6px;
-}
-
-.social__logo {
-
-  &:hover {
-    fill:
-      #669EC0;
-  }
-
-  &:active {
-    fill:
-      #5496BD;
   }
 }

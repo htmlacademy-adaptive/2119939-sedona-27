@@ -25,7 +25,7 @@
 }
 
 
-.error__wrapper {
+.modal-container--error {
     width: 237px;
     margin: 0 auto;
 
@@ -34,7 +34,7 @@
     }
 }
 
-.success {
+.modal-container--success {
     background-color: #F2F2F2;
     width: 320px;
 
@@ -54,13 +54,5 @@
     @media (min-width: $tablet-width) {
         width: 444px;
         padding: 53px 99px 30px 97px;
-    }
-}
-
-.success__button {
-    margin: 20px;
-
-    @media (min-width: $tablet-width) {
-        width: 458px;
     }
 }

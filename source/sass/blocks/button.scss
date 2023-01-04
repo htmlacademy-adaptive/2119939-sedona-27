@@ -28,8 +28,11 @@
 
 }
 
-.photo__likes-button {
-  border: none;
-  background-color: transparent;
- 
+
+.button--success {
+  margin: 20px;
+
+  @media (min-width: $tablet-width) {
+      width: 458px;
+  }
 }

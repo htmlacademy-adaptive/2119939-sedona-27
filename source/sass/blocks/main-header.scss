@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // width: 100%;
   position: relative;
   max-height: 56px;
 
@@ -49,8 +48,6 @@
     flex-direction: row;
   }
 }
-
-
 
 .main-nav__list {
   list-style-type: none;
@@ -111,6 +108,16 @@
   box-shadow:
     0 8px 0 0 fade(#ffffff, 30%),
     0 16px 0 0 fade(#ffffff, 30%);
+
+  @media (max-width: $mobile-width-only) {
+    .main-nav--closed .site-list__item {
+      display: none;
+    }
+
+    .main-nav--closed .user-list__item {
+      display: none;
+    }
+  }
 }
 
 .main-nav--closed .main-nav__list {
@@ -119,7 +126,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
-
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -131,9 +137,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    right: 20px;
-    width: 36px;
+    top: 26px;
+    right: 45px;
+    width: 30px;
     height: 4px;
     background-color: #ffffff;
   }
@@ -145,88 +151,5 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-}
-
-.site-list__item {
-  background-color: #81B3D2;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 17px;
-  padding-bottom: 12px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: 1px solid #01010133;
-  border-top: 1px solid #FFFFFF33;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #669EC0;
-  }
-
-  &:active {
-    color: #FFFFFF33;
-  }
-
-
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-    width: 145px;
-    padding-left: 7px;
-    padding-right: 7px;
-    border: none;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $white;
-      color: #766357;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 240px;
-  }
-}
-
-.site-list__item--empty {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.site-list__item--current {
-  color:#766357;
-}
-
-.site-list__link--current {
-  color:#766357;
-}
-
-.site-list__link {
-  text-decoration: none;
-  color: $white;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 0 5px;
-
-  @media (min-width: $tablet-width) {
-    color: $black;
-
-    &:hover {
-      color:#81B3D2;
-    }
-
-    &:active {
-      color:#0000004d;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $black;
   }
 }

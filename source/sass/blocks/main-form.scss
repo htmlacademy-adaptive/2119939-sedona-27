@@ -1,0 +1,58 @@
+.main-form__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  position: relative;
+}
+
+
+.main-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 64px;
+    padding-bottom: 15px;
+  }
+}
+
+.main-form__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 38px;
+  padding-top: 8px;
+  margin: 0;
+  width: 280px;
+
+
+    &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #E5E5E5;
+    bottom: 10px;
+    left: 25px;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    &::after {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+.impression__list {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        width: 576px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+        padding-top: 28px;
+        padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 960px;
+    }
+}
+
+.impression__item {
+    height: 46px;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex: 0 0 33%;
+    }
+}

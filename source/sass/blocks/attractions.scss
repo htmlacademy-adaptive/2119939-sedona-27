@@ -1,0 +1,35 @@
+.attractions__list {
+    padding-left: 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 28px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 960px;
+        justify-content: space-between;
+    }
+}
+
+.attractions__item {
+    height: 46px;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 224px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+        flex: 0 0 184px;
+    }
+}

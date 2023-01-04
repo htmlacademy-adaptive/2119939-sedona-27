@@ -1,15 +1,17 @@
 @import "./blocks/fonts.scss";
-@import "./blocks/page__body.scss";
-@import "./blocks/page__container.scss";
+@import "./blocks/page.scss";
+
 @import "./blocks/variables.scss";
 
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/site-list.scss";
 
 
-@import "./blocks/hero-block.scss";
+@import "./blocks/hero.scss";
 
 @import "./blocks/button.scss";
+@import "./blocks/icon.scss";
 
 
 @import "./blocks/advantages.scss";
@@ -18,12 +20,16 @@
 
 
 @import "./blocks/search-hotel.scss";
-@import "./blocks/photo__container.scss";
+@import "./blocks/photo.scss";
 @import "./blocks/video.scss";
 
-
+@import "./blocks/main-form.scss";
 @import "./blocks/review-form.scss";
 @import "./blocks/controls.scss";
+@import "./blocks/name.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/impression.scss";
+@import "./blocks/attractions.scss";
 
 @import "./blocks/main-footer.scss";
 @import "./blocks/hashtag.scss";

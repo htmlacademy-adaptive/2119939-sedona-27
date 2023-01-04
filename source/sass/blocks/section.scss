@@ -6,21 +6,18 @@
   background-color: $white;
 }
 
-
-
 .section__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
-
 }
-
 
 .section__text {
   font-weight: 400;
@@ -28,6 +25,8 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
+  padding-top: 8px;
   margin: 0;
+  width: 280px;
 }

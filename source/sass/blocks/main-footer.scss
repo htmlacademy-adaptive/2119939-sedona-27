@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   width: 180px;
   margin: 0 auto;
+  padding-top: 15px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     width: 648px;

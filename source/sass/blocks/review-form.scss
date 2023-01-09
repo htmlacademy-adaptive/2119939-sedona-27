@@ -25,6 +25,13 @@
   border: none;
   position: relative;
 
+}
+
+.review-form--contacts {
+  width: 320px;
+padding-left: 20px;
+padding-right: 20px;
+margin: 0;
 
 
 }
@@ -50,6 +57,8 @@
 }
 
 .review-form__title--name {
+
+  
 
   &::before {
     position: absolute;
@@ -82,7 +91,7 @@
 
 .review-form__input-field {
   background-color: #f2f2f2;
-  padding: 16px 20px;
+  padding: 16px 20px 16px 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -99,6 +108,13 @@
     background-color: #FFFFFF;
     outline: 4px solid #E5E5E5;
   }
+}
+
+
+
+
+.review-form__input-contact {
+  padding-right: 80px
 }
 
 .review-form__input-label {

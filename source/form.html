@@ -46,7 +46,7 @@
                 ФОРМА ОТЗЫВА
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--last">
               <a class="site-list__link" href="#">
                 HTML ACADEMY
               </a>
@@ -74,7 +74,7 @@
         <h2 class="visually-hidden">Форма для отзыва</h2>
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="review-form__info">
-            <fieldset class="review-form__container review-form__name">
+            <fieldset class="review-form__container review-form--name">
               <legend class="review-form__title review-form__title--name">Представьтесь:</legend>
               <ul class="review-form__list name__list">
                 <li class="review-form__item name__item">
@@ -96,12 +96,12 @@
               </ul>
             </fieldset>
 
-            <fieldset class="review-form__container">
+            <fieldset class="review-form__container review-form--contacts">
               <legend class="review-form__title review-form__title--name">Контактная информация:</legend>
               <ul class="review-form__list contacts__list">
                 <li class="review-form__item contacts__item">
                   <label class="review-form__input-label contacts__item-label" for="input-phone">Контактный телефон*:</label>
-                  <input class="review-form__input-field" type="text" id="input-phone" placeholder="Введите телефон"
+                  <input class="review-form__input-field review-form__input-contact" type="text" id="input-phone" placeholder="Введите телефон"
                     required>
                   <div class="contacts__item--img-wrapper">
                     <svg class="contacts__item--img" width="18" height="18">
@@ -112,7 +112,7 @@
                 </li>
                 <li class="review-form__item contacts__item">
                   <label class="review-form__input-label contacts__item-label" for="input-email">Электронная почта*:</label>
-                  <input class="review-form__input-field" type="text" id="input-email" placeholder="Введите e-mail"
+                  <input class="review-form__input-field review-form__input-contact" type="text" id="input-email" placeholder="Введите e-mail"
                     required>
                   <div class="contacts__item--img-wrapper">
 

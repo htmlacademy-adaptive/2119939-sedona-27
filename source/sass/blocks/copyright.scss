@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   vertical-align: middle;
-  padding-top: 40px;
+  padding-top: 45px;
 
   &:hover {
     color: #81B3D2;
@@ -18,7 +18,7 @@
   }
 
   &:active .copyright__logo {
-        fill: #B3B3B3;
+    fill: #B3B3B3;
   }
 
   @media (min-width: $tablet-width) {
@@ -29,8 +29,17 @@
 .copyright__text {
   text-transform: uppercase;
   display: block;
+  margin: 0;
+  padding: 15px 0 0 0;
 }
 
 .copyright__logo {
   margin-left: 12px;
+  width: 27px;
+  height: 35px;
+  padding-top: 10px;
+
+  &:hover {
+    fill: pink;
+  }
 }

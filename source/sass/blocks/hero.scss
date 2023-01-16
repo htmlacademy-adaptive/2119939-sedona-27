@@ -3,7 +3,7 @@
   text-align: center;
   background-image: url(/img/hero-triangle.svg), url(/img/back-mobile.jpg);
   background-position: center bottom, center;
-  background-size: 100% auto;
+  background-size: auto;
   background-repeat: no-repeat, no-repeat;
   background-color: #756157;
   color: $white;
@@ -47,7 +47,7 @@
   text-align: center;
   background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-mobile.jpg);
   background-position: center bottom, center bottom;
-  background-size: 100% auto;
+  background-size: auto;
   background-repeat: no-repeat, no-repeat;
   background-color: #756157;
   color: $white;
@@ -77,7 +77,6 @@
   @media (min-resolution: 2dppx) {
     background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-desktop@2x.jpg);
   }
-
 }
 
 .hero__inner-container {
@@ -89,13 +88,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    padding-bottom: 50px;
-  }
-}
-
-.hero__inner-text br {
-  @media (max-width: 320px) {
-    display: none;
+    padding-bottom: 53px;
   }
 }
 
@@ -126,10 +119,19 @@
   @media (min-width: $tablet-width) {
     width: 458px;
     padding-top: 5px;
+
   }
 
   @media (min-width: $desktop-width) {
     width: 458px;
+    padding-top: 10px;
+  }
+}
+
+.hero__inner-text span {
+
+  @media (max-width: 768px) {
+    white-space: pre;
   }
 }
 

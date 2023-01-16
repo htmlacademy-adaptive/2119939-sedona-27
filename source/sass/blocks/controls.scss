@@ -17,6 +17,11 @@
   &:disabled {
     background-color: #D5D5D5;
   }
+
+  @media (min-width: $tablet-width) {
+    left: -10px;
+    top: -15px;
+  }
 }
 
 .control-mark--checkbox {

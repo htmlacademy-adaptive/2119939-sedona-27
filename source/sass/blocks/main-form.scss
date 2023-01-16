@@ -23,6 +23,11 @@
     padding-top: 64px;
     padding-bottom: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+        padding-top: 112px;
+    padding-bottom: 15px;
+  }
 }
 
 .main-form__text {
@@ -50,9 +55,13 @@
 
   @media (min-width: $tablet-width) {
     width: 435px;
+
     &::after {
       display: none;
     }
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
 }

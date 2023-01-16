@@ -43,16 +43,3 @@
     }
 }
 
-
-.success__wrapper {
-    background-color: $white;
-    width: 244px;
-    margin: 0 auto;
-    padding: 0 38px;
-
-
-    @media (min-width: $tablet-width) {
-        width: 444px;
-        padding: 53px 99px 30px 97px;
-    }
-}

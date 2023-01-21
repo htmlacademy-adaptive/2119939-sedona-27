@@ -1,4 +1,5 @@
 .icon-like {
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     fill: #ffffff;
@@ -8,6 +9,14 @@
 .icon-play-video {
   position: absolute;
   z-index: 2;
-  top: 50%;
-  width: 50%;
+  top: 55%;
+  left: 50%;
+}
+
+.icon-copyright {
+  fill: #2E368F;
+
+  &:hover {
+    fill: pink;
+  }
 }

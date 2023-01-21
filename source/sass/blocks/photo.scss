@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     background-color: #EAEAEA;
     padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,9 +49,11 @@
 }
 
 .photo__img {
+  width: 280px;
+
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+
     object-fit: cover;
     height: 267px;
   }
@@ -110,6 +113,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
@@ -130,15 +134,21 @@
 
 .photo__likes {
   font-weight: 700;
+  padding-left: 8px;
 }
 
 .photo__img {
-  max-width: 100%;
+
   object-fit: cover;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .photo__likes-button {
   border: none;
   background-color: transparent;
+  padding: 0;
 }

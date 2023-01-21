@@ -1,3 +1,10 @@
+.contacts__list {
+    width: 320px;
+    padding-left: 0;
+}
+
+
+
 .contacts__item {
     display: flex;
     flex-direction: column;
@@ -7,8 +14,8 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-       padding-left: 30px;
-       width: 280px;
+        padding-left: 30px;
+        width: 280px;
     }
 }
 
@@ -20,7 +27,7 @@
     position: absolute;
     width: 58px;
     height: 58px;
-    right: 15px;
+    right: 20px;
     top: 22px;
     background-color: #E6E6E6;
     justify-content: center;

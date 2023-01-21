@@ -160,8 +160,8 @@ export default gulp.series(
   scripts,
   svg,
   sprite,
-  createWebp, 
+  createWebp,
   gulp.series(
     server,
-  watcher
-));
+    watcher
+  ));

@@ -42,7 +42,7 @@
   }
 }
 
-.hero__inner {
+.hero-inner {
   height: 158px;
   text-align: center;
   background-image: url(/img/hero-triangle-tablet.svg), url(/img/hero-inner-mobile.jpg);
@@ -79,7 +79,7 @@
   }
 }
 
-.hero__inner-container {
+.hero-inner__container {
   padding: 37px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -92,7 +92,13 @@
   }
 }
 
-.hero__inner-title {
+.hero-inner__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 28px;
@@ -101,11 +107,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
-  }
+    padding-bottom: 20px;}
+  
 }
 
-.hero__inner-text {
+.hero-inner__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -113,7 +119,7 @@
   text-align: center;
   padding-bottom: 38px;
   padding-top: 25px;
-  margin: 0;
+  margin: 0 auto;
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -128,14 +134,14 @@
   }
 }
 
-.hero__inner-text span {
+.hero-inner__text span {
 
   @media (max-width: 768px) {
     white-space: pre;
   }
 }
 
-.hero__inner-image {
+.hero-inner__image {
   width: 230px;
   padding-top: 52px;
 

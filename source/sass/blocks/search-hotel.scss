@@ -1,6 +1,11 @@
 .search-hotel {
   padding-top: 38px;
   padding-bottom: 49px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
@@ -22,6 +27,14 @@
 }
 
 .search-hotel__title {
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 26px;

@@ -29,5 +29,13 @@
 }
 
 .social__logo {
-  padding: 15px;
+  padding: 14px 14px;
+  color: #ffffff;
+  opacity: 1;
+
+  &:active {
+    opacity: 0.3;
+   
+  }
+
 }

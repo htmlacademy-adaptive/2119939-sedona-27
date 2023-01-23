@@ -1,0 +1,90 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f2f2f2cc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        width: 100%;
+    }
+
+}
+
+.modal-container--error {
+    position: relative;
+    margin: auto;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 42px 28px 42px;
+
+    @media (min-width: $tablet-width) {
+        width: 400px;
+        padding: 50px 0 50px 0;
+    }
+
+}
+
+.modal-container--success {
+    position: relative;
+    margin: auto;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+
+}
+
+.modal-container__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
+        width: 220px;
+
+    }
+}
+
+.modal-container__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 237px;
+    padding: 0 3px 28px 36px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+        width: 280px;
+    }
+}
+
+.modal-container__button-wrapper {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+.modal-container__close-button {
+    width: 180px;
+}
+
+.modal-container-close {
+    display: none;
+}

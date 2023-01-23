@@ -41,6 +41,56 @@
   align-items: center;
   justify-content: center;
 
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 2;
+  }
+
+  &:nth-child(3) {
+    order: 3;
+  }
+
+  &:nth-child(4) {
+    order: 4;
+  }
+
+  &:nth-child(5) {
+    order: 5;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+
+    @media (min-width: $tablet-width) {
+      order: 7;
+    }
+  }
+
+  &:nth-child(7) {
+    order: 7;
+
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
+  }
+
+  &:nth-child(8) {
+    order: 8;
+  }
+
+  &:nth-child(9) {
+    order: 9;
+  }
+
+  &:nth-child(10) {
+    order: 10;
+  }
+
+  @media (min-width: $tablet-width) {min-height: 256px;
+  max-height: 256px;}
 
 }
 
@@ -124,6 +174,15 @@
 
 }
 
+.advantages__title--bridge {
+  padding-top: 37px;
+  margin: 0;
+}
+
+.advantages__item--gift {
+  padding-bottom: 45px;
+}
+
 .advantages__item--light {
   background-color: #eeeeee;
 
@@ -133,7 +192,7 @@
 }
 
 .advantages__item--light .advantages__title {
-  padding-top: 24px;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
@@ -162,7 +221,7 @@
 }
 
 .advantages__title--big {
-  padding: 33px 25px 35px 25px;
+  padding: 35px 25px 35px 25px;
   margin: 0 auto;
   width: auto;
 
@@ -207,7 +266,7 @@
 .advanatages__text--light {
   border-bottom: 1px solid #D6D6D6;
   padding-bottom: 24px;
-  width: 250px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -285,6 +344,7 @@
   margin: 0;
   padding: 0;
   height: 260px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 512px;
@@ -325,6 +385,8 @@
 }
 
 .advantages__icon--gift {
+
+
   @media (min-width: $tablet-width) {
 
     width: 67px;

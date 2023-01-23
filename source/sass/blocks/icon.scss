@@ -2,7 +2,9 @@
   cursor: pointer;
 
   @media (min-width: $desktop-width) {
+    color: #ffffff;
     fill: #ffffff;
+    opacity: 1;
   }
 }
 
@@ -16,7 +18,4 @@
 .icon-copyright {
   fill: #2E368F;
 
-  &:hover {
-    fill: pink;
-  }
 }
